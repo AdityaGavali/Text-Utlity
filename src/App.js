@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import NavBar from './components/NavBar';
+import TextForm from './components/TextForm';
+
+
+
 
 function App() {
+  let [mode , setmode] = useState('Light Mode')
+  const [darkMode, setDarkMode] = useState(true);
+  function toggleDarkMode() {
+    setDarkMode(prevDarkMode => !prevDarkMode)
+    if(mode == 'Dark Mode')setmode('Light Mode')
+    else setmode('Dark Mode')
+}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+      <div className={`${darkMode ? "dark" : "light"}`}>
+      <NavBar  darkMode={darkMode} 
+    toggleDarkMode={toggleDarkMode} mode = {mode} />
+      <div className=" heading m-10 text-center text-3xl  text-purple-500 font-Alkatra">TO ANALYZE THE TEXT PLEASE ENTER THE TEXT BELOW</div>
+      <TextForm/>
+      
+      </div>
+   
+
   );
 }
 
