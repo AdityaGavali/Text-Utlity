@@ -1,4 +1,17 @@
+Home Page: Dark Mode
+
+![Screenshot (317)](https://github.com/AdityaGavali/Text-Utlity/assets/85026115/e015bd4c-f2d9-4d3f-9d57-ef1f3ecfe3ab)
+
+![Screenshot (318)](https://github.com/AdityaGavali/Text-Utlity/assets/85026115/c7a9d53d-51a3-4b33-9d7d-7b988ce02fd7)
+
+Home Page: Light Mode
+
+![Screenshot (319)](https://github.com/AdityaGavali/Text-Utlity/assets/85026115/8087d088-e737-4ee6-8826-1a937967df7a)
+
+
 # Getting Started with Create React App
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
